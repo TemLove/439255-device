@@ -20,6 +20,10 @@ body {
 .user-menu {
   line-height: 36px;
   letter-spacing: 0.01em;
+}
+
+.user-menu a {
+  text-decoration: none;
   color: #000000;
 }
 
@@ -32,15 +36,18 @@ body {
   letter-spacing: 0.01em;
 }
 
-.catalog-navigation,
-.site-navigation {
+.main-navigation {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2;
-  color: #000000;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .submenu {
@@ -50,5 +57,5 @@ body {
   font-weight: 300;
   letter-spacing: 0.01em;
   text-transform: none;
-  color: #000000;
+  list-style: none;
 }

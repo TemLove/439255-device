@@ -16,20 +16,21 @@
         <div class="user-menu">
           <div class="user-menu__left">
             <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-              <input class="search-field search-icon" type="search" placeholder="Поиск по сайту">
+              <label for="search" class="visually-hidden">Поиск</label>
+              <input class="search-field search-icon" type="search" id="search" placeholder="Поиск по сайту">
               <button class="button">Найти</button>
             </form>
           </div>
           <div class="user-menu__right">
             <ul class="user-links user-links-header">
               <li class="menu-entrance">
-                <a class="menu-icon h-entrance-icon" href="#">Войти</a>
+                <a class="menu-icon h-entrance-icon" href="login.html">Войти</a>
               </li>
               <li class="menu-compare">
-                <a class="menu-icon h-compare-icon" href="#">Сравнить</a>
+                <a class="menu-icon h-compare-icon" href="compare.html">Сравнить</a>
               </li>
               <li class="menu-cart">
-                <a class="menu-icon h-cart-icon" href="#">Корзина</a>
+                <a class="menu-icon h-cart-icon" href="cart.html">Корзина</a>
               </li>
             </ul>
           </div>
@@ -37,8 +38,7 @@
         <nav class="main-navigation">
           <ul class="catalog-navigation">
             <li>
-              <a href="#">Каталог товаров</a>
-              <span class="catalog-navigation-open">+</span>
+              <a class="catalog-navigation-open" href="#">Каталог товаров</a>
               <ul class="submenu">
                 <li>
                   <a href="#">Виртуальная реальность</a>
@@ -63,13 +63,13 @@
           </ul>
           <ul class="site-navigation site-navigation-header">
             <li class="menu-delivery">
-              <a href="#">Доставка</a>
+              <a href="delivery.html">Доставка</a>
             </li>
             <li class="menu-guarantee">
-              <a href="#">Гарантия</a>
+              <a href="guarantee.html">Гарантия</a>
             </li>
             <li class="menu-contacts">
-              <a href="#">Контакты</a>
+              <a href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -180,23 +180,23 @@
         <div class="container">
           <h2 class="visually-hidden">Популярные товары</h2>
           <ol>
-            <li class="product product-icon vr-icon">
-              <a class="virt-real" href="#">Виртуальная реальность</a>
+            <li class="product">
+              <a class="product-icon vr-icon virt-real" href="#">Виртуальная реальность</a>
             </li>
-            <li class="product product-icon monopod-icon">
-              <a class="monopods" href="catalog.html">Моноподы для селфи</a>
+            <li class="product">
+              <a class="product-icon monopod-icon monopods" href="catalog.html">Моноподы для селфи</a>
             </li>
-            <li class="product product-icon cameras-icon">
-              <a class="cameras" href="#">Экшн-камеры</a>
+            <li class="product">
+              <a class="product-icon cameras-icon cameras" href="#">Экшн-камеры</a>
             </li>
-            <li class="product product-icon bracelets-icon">
-              <a class="bracelets" href="#">Фитнес-браслеты</a>
+            <li class="product">
+              <a class="product-icon bracelets-icon bracelets" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="product product-icon watch-icon">
-              <a class="watch" href="#">Умные часы</a>
+            <li class="product ">
+              <a class="product-icon watch-icon watch" href="#">Умные часы</a>
             </li>
-            <li class="product product-icon cuadrupter-icon">
-              <a class="cuadrupter" href="#">Квадрокоптеры</a>
+            <li class="product">
+              <a class="product-icon cuadrupter-icon cuadrupter" href="#">Квадрокоптеры</a>
             </li>
           </ol>
         </div>
@@ -314,13 +314,13 @@
       <div class="footer-middle">
         <ul class="site-navigation site-navigation-footer">
           <li class="menu-delivery">
-            <a href="#">Доставка</a>
+            <a href="delivery.html">Доставка</a>
           </li>
           <li class="menu-guarantee">
-            <a href="#">Гарантия</a>
+            <a href="guarantee.html">Гарантия</a>
           </li>
           <li class="menu-contacts">
-            <a href="#">Контакты</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
         <ul class="socials">
@@ -338,13 +338,13 @@
       <div class="footer-right">
         <ul class="user-links user-links-footer">
           <li class="menu-entrance">
-              <a class="menu-icon f-entrance-icon" href="#">Войти</a>
+              <a class="menu-icon f-entrance-icon" href="login.html">Войти</a>
           </li>
           <li class="menu-compare">
-            <a class="menu-icon f-compare-icon" href="#">Сравнить</a>
+            <a class="menu-icon f-compare-icon" href="compare.html">Сравнить</a>
           </li>
           <li class="menu-cart">
-            <a class="menu-icon f-cart-icon" href="#">Корзина</a>
+            <a class="menu-icon f-cart-icon" href="cart.html">Корзина</a>
           </li>
         </ul>
         <p class="phone">Тел.: +7 (495) 495-95-95</p>
@@ -368,12 +368,12 @@
           <textarea name="mail-content" id="mail-content" rows="5">В свободной форме</textarea>
         </div>
         <button type="submit">Отправить</button>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>                      
 </html>

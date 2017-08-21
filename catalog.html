@@ -16,15 +16,16 @@
         <div class="user-menu">
           <div class="user-menu__left">
             <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-              <input class="search-field search-icon" type="search" placeholder="Поиск по сайту">
+              <label for="search" class="visually-hidden">Поиск</label>
+              <input class="search-field search-icon" type="search" id="search" placeholder="Поиск по сайту">
               <button class="button">Найти</button>
             </form>
           </div>
           <div class="user-menu__right">
             <ul class="user-links user-links-header">
               <li class="menu-entrance">
-                <a class="menu-icon h-entrance-icon" href="#">Валентин Петухов</a>
-                <a class="entrance-logout" href="#">Выйти</a>
+                <a class="menu-icon h-entrance-icon" href="profile.html">Валентин Петухов</a>
+                <button class="entrance-logout" type="button">Выйти</button>
               </li>
               <li class="menu-compare">
                 <a class="menu-icon h-compare-icon" href="#">Сравнить</a>
@@ -38,8 +39,7 @@
         <nav class="main-navigation">
           <ul class="catalog-navigation">
             <li>
-              <a href="#">Каталог товаров</a>
-              <span class="catalog-navigation-open">+</span>
+              <a class="catalog-navigation-open" href="#">Каталог товаров</a>
               <ul class="submenu">
                 <li>
                   <a href="#">Виртуальная реальность</a>
@@ -64,13 +64,13 @@
           </ul>
           <ul class="site-navigation site-navigation-header">
             <li class="menu-delivery">
-              <a href="#">Доставка</a>
+              <a href="delivery.html">Доставка</a>
             </li>
             <li class="menu-guarantee">
-              <a href="#">Гарантия</a>
+              <a href="guarantee.html">Гарантия</a>
             </li>
             <li class="menu-contacts">
-              <a href="#">Контакты</a>
+              <a href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -100,9 +100,16 @@
               <h2 class="filters-title">Фильтр:</h2>
               <fieldset class="price-filter">
                 <legend class="price-filter-title">Стоимость</legend>
-                <div class="price-filter-scale">
-                  <div class="price-filter-min">от 0</div>
-                  <div class="price-filter-max">до 5000</div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale"><div class="bar"></div></div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
+                  </div>
+                  <div class="price-controls">
+                    от <input class="min-price" type="text" value="0">
+                    до <input class="max-price" type="text" value="5 000">
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="color-filter">
@@ -143,7 +150,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button type="submit" class="filter-button button">Показать</button>
+              <button class="filter-button button" type="submit">Показать</button>
             </form>
           </div>
           <div class="catalog-products">
@@ -184,8 +191,8 @@
                   </a>
                 </div>
                 <div class="catalog-item-buy">
-                  <a class="button" href="#">В корзину</a>
-                  <a class="to-compare" href="#">Добавить к сравнению</a>
+                  <button class="button" type="button">В корзину</button>
+                  <button class="to-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -201,8 +208,8 @@
                   </a>
                 </div>
                 <div class="catalog-item-buy">
-                  <a class="button" href="#">В корзину</a>
-                  <a class="to-compare" href="#">Добавить к сравнению</a>
+                  <button class="button" type="button">В корзину</button>
+                  <button class="to-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -218,8 +225,8 @@
                   </a>
                 </div>
                 <div class="catalog-item-buy">
-                  <a class="button" href="#">В корзину</a>
-                  <a class="to-compare" href="#">Добавить к сравнению</a>
+                  <button class="button" type="button">В корзину</button>
+                  <button class="to-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -235,8 +242,8 @@
                   </a>
                 </div>
                 <div class="catalog-item-buy">
-                  <a class="button" href="#">В корзину</a>
-                  <a class="to-compare" href="#">Добавить к сравнению</a>
+                  <button class="button" type="button">В корзину</button>
+                  <button class="to-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
             </ul>
@@ -261,13 +268,13 @@
       <div class="footer-middle">
         <ul class="site-navigation site-navigation-footer">
           <li class="menu-delivery">
-            <a href="#">Доставка</a>
+            <a href="deliver.html">Доставка</a>
           </li>
           <li class="menu-guarantee">
-            <a href="#">Гарантия</a>
+            <a href="guarantee.html">Гарантия</a>
           </li>
           <li class="menu-contacts">
-            <a href="#">Контакты</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
         <ul class="socials">
@@ -285,14 +292,14 @@
       <div class="footer-right">
         <ul class="user-links user-links-footer">
           <li class="menu-entrance">
-            <a class="menu-icon h-entrance-icon" href="#">Валентин Петухов</a>
-            <a class="entrance-logout" href="#">Выйти</a>
+            <a class="menu-icon h-entrance-icon" href="profile.html">Валентин Петухов</a>
+            <button class="entrance-logout" type="button">Выйти</button>
           </li>
           <li class="menu-compare">
-            <a class="menu-icon f-compare-icon" href="#">Сравнить</a>
+            <a class="menu-icon f-compare-icon" href="compare.html">Сравнить</a>
           </li>
           <li class="menu-cart">
-            <a class="menu-icon f-cart-icon" href="#">Корзина</a>
+            <a class="menu-icon f-cart-icon" href="cart.html">Корзина</a>
           </li>
         </ul>
         <p class="phone">Тел.: +7 (495) 495-95-95</p>
