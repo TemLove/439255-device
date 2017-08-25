@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <div class="container">  
+      <header class="main-header">
         <div class="header-logo">
           <a class="logo logo-header">
             <img src="img/logo-header.png" alt="DEVICE" width="164" height="36">
@@ -18,11 +19,11 @@
             <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
               <label for="search" class="visually-hidden">Поиск</label>
               <input class="search-field search-icon" type="search" id="search" placeholder="Поиск по сайту">
-              <button class="button">Найти</button>
+              <button class="user-button search-button">Найти</button>
             </form>
           </div>
           <div class="user-menu__right">
-            <ul class="user-links user-links-header">
+            <ul class="user-links user-links-header list">
               <li class="menu-entrance">
                 <a class="menu-icon h-entrance-icon" href="login.html">Войти</a>
               </li>
@@ -36,10 +37,10 @@
           </div>
         </div>
         <nav class="main-navigation">
-          <ul class="catalog-navigation">
+          <ul class="catalog-navigation list">
             <li>
-              <a class="catalog-navigation-open" href="#">Каталог товаров</a>
-              <ul class="submenu">
+              <a class="navigation-link catalog-navigation-open" href="#">Каталог товаров</a>
+              <ul class="submenu list">
                 <li>
                   <a href="#">Виртуальная реальность</a>
                 </li>
@@ -61,20 +62,20 @@
               </ul>
             </li>
           </ul>
-          <ul class="site-navigation site-navigation-header">
+          <ul class="site-navigation site-navigation-header list">
             <li class="menu-delivery">
-              <a href="delivery.html">Доставка</a>
+              <a class="navigation-link" href="delivery.html">Доставка</a>
             </li>
             <li class="menu-guarantee">
-              <a href="guarantee.html">Гарантия</a>
+              <a class="navigation-link" href="guarantee.html">Гарантия</a>
             </li>
             <li class="menu-contacts">
-              <a href="contacts.html">Контакты</a>
+              <a class="navigation-link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
+    </div>
     <main>
       <h1 class="visually-hidden">Магазин современных девайсов DEVICE</h1>
       <section class="promo-slider">
@@ -83,7 +84,7 @@
           <input class="visually-hidden" type="radio" id="promo-btn-1" name="toggle" checked>
           <input class="visually-hidden" type="radio" id="promo-btn-2" name="toggle">
           <input class="visually-hidden" type="radio" id="promo-btn-3" name="toggle">
-          <ul class="slider-controls">
+          <ul class="slider-controls list">
             <li>
               <label for="promo-btn-1">1</label>
             </li>
@@ -94,8 +95,8 @@
               <label for="promo-btn-3">3</label>
             </li>        
           </ul>
-          <ul class="slider-slides">
-            <li class="promo-slide-1" data-number="01">
+          <ul class="slider-slides list">
+            <li class="promo-slide promo-slide-1" data-number="01">
               <div class="slide-left">
                 <img src="img/slider-1.png" alt="Селфи палка" width="384" height="486">
               </div>
@@ -108,7 +109,7 @@
                   Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
-                <a class="button" href="#">Подробнее</a>
+                <a class="button promo-btn" href="#">Подробнее</a>
                 <table class="properties">
                   <tr class="prop-value">
                     <td>8,5 м</td>
@@ -123,7 +124,7 @@
                 </table>           
               </div>
             </li>
-            <li class="promo-slide-2" data-number="02">
+            <li class="promo-slide promo-slide-2" data-number="02">
               <div class="slide-left">
                 <img src="img/slider-2.png" alt="Фитнес браслет" width="345" height="485">
               </div>
@@ -136,7 +137,7 @@
                   Мотивирующие фитнес-браслеты помогут найти в себе силы 
                   не пропускать занятия и соблюдать диету.
                 </p>
-                <a href="#">Подробнее</a>
+                <a class="button promo-btn" href="#">Подробнее</a>
                 <table class="properties">
                   <tr class="prop-value">
                     <td>48 часов</td>
@@ -147,7 +148,7 @@
                 </table>
               </div>                     
             </li>
-            <li class="promo-slide-3" data-number="03">
+            <li class="promo-slide promo-slide-3" data-number="03">
               <div class="slide-left">
                 <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
               </div>
@@ -160,7 +161,7 @@
                   Этот обычный, на первый взгляд, квадрокоптер оснащен 
                   мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <a href="#">Подробнее</a>
+                <a class="button promo-btn" href="#">Подробнее</a>
                 <table class="properties">
                   <tr class="prop-value">
                     <td>800 м</td>
@@ -179,7 +180,7 @@
       <section class="popular-products">
         <div class="container">
           <h2 class="visually-hidden">Популярные товары</h2>
-          <ol>
+          <ol class="list">
             <li class="product">
               <a class="product-icon vr-icon virt-real" href="#">Виртуальная реальность</a>
             </li>
@@ -207,18 +208,18 @@
         <input type="radio" id="serv-btn-2" name="toggle">
         <input type="radio" id="serv-btn-3" name="toggle">
         <div class="services-container">
-          <ul class="slider-controls">
+          <ul class="slider-controls list">
             <li class="services-delivery">
-              <label for="serv-btn-1">Доставка</label>
+              <label class="button service-btn" for="serv-btn-1">Доставка</label>
             </li>
             <li class="services-guarantee">
-              <label for="serv-btn-2">Гарантия</label>
+              <label class="button service-btn" for="serv-btn-2">Гарантия</label>
             </li>
             <li class="services-credit">
-              <label for="serv-btn-3">Кредит</label>
+              <label class="button service-btn" for="serv-btn-3">Кредит</label>
             </li>
           </ul>
-          <ul class="slider-slides">
+          <ul class="slider-slides list">
             <li class="services-slide-1">
               <h3 class="title">
                 Доставка 
@@ -250,7 +251,7 @@
       <section class="partners">
         <div class="container">
           <h2 class="visually-hidden">Наши партнеры</h2>
-          <ul class="partners-list">
+          <ul class="partners-list list">
             <li class="partner partner-dji">
               <a href="#">
                 <img src="img/logo-1.png" width="260" height="100" alt="DJI">
@@ -289,7 +290,7 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button" href="#">Подробнее о нас</a>
+            <a class="button info-btn" href="#">Подробнее о нас</a>
           </div>
           <div class="contacts">
             <h2 class="title">Контакты</h2>
@@ -299,7 +300,7 @@
             <a class="map" href="#">
               <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15">
             </a>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button info-btn" href="#">Напишите нам</a>
           </div>
         </div>
       </section>
@@ -312,18 +313,18 @@
         <p class="address">г. Москва, ул. Строителей, 15</p>
       </div>
       <div class="footer-middle">
-        <ul class="site-navigation site-navigation-footer">
+        <ul class="site-navigation site-navigation-footer list">
           <li class="menu-delivery">
-            <a href="delivery.html">Доставка</a>
+            <a class="navigation-link" href="delivery.html">Доставка</a>
           </li>
           <li class="menu-guarantee">
-            <a href="guarantee.html">Гарантия</a>
+            <a class="navigation-link" href="guarantee.html">Гарантия</a>
           </li>
           <li class="menu-contacts">
-            <a href="contacts.html">Контакты</a>
+            <a class="navigation-link" href="contacts.html">Контакты</a>
           </li>
         </ul>
-        <ul class="socials">
+        <ul class="socials list">
           <li>
             <a class="social-button fb-icon" href="#">Фейсбук</a>
           </li>
@@ -336,7 +337,7 @@
         </ul>
       </div>
       <div class="footer-right">
-        <ul class="user-links user-links-footer">
+        <ul class="user-links user-links-footer list">
           <li class="menu-entrance">
               <a class="menu-icon f-entrance-icon" href="login.html">Войти</a>
           </li>
@@ -354,7 +355,7 @@
     
     <section class="modal modal-contacts">
       <h2 class="visually-hidden">Свяжитесь с нами</h2>
-      <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
         <div class="half-width"> 
           <label for="name">Ваше имя:</label>
           <input type="text" name="name" id="name" value="Представьтесь, пожалуйста">
@@ -367,7 +368,7 @@
           <label for="mail-content">Текст отзыва</label>
           <textarea name="mail-content" id="mail-content" rows="5">В свободной форме</textarea>
         </div>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
