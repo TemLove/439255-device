@@ -16,43 +16,52 @@
         </div>
         <div class="user-menu">
           <div class="user-menu__left">
-            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+            <form class="search-form icon search-icon" method="get" action="https://echo.htmlacademy.ru">
               <label for="search" class="visually-hidden">Поиск</label>
-              <input class="search-field search-icon" type="search" id="search" placeholder="Поиск по сайту">
+              <input class="search-field" type="search" id="search" placeholder="Поиск по сайту">
               <button class="user-button search-button">Найти</button>
             </form>
           </div>
           <div class="user-menu__right">
             <ul class="user-links user-links-header list">
               <li class="menu-entrance">
-                <a class="menu-icon h-entrance-icon" href="profile.html">Валентин Петухов</a>
+                <a class="user-link" href="profile.html">
+                  <svg class="menu-icon header-icon" width="13" height="12"><use xlink:href='#user' /></svg>
+                  Валентин Петухов
+                </a>
                 <button class="user-button logout-button-header" type="button">Выйти</button>
               </li>
               <li class="menu-compare">
-                <a class="menu-icon h-compare-icon" href="#">Сравнить</a>
+                <a class="user-link" href="compare.html">
+                  <svg class="menu-icon header-icon" width="10" height="10"><use xlink:href='#compare' /></svg>
+                  Сравнить
+                </a>
               </li>
               <li class="menu-cart">
-                <a class="menu-icon h-cart-icon" href="#">Корзина</a>
+                <a class="user-link" href="cart.html">
+                  <svg class="menu-icon header-icon" width="12" height="12"><use xlink:href="#cart" /></svg>
+                  Корзина
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <nav class="main-navigation">
           <ul class="catalog-navigation list">
-            <li>
-              <a class="navigation-link catalog-navigation-open" href="#">Каталог товаров</a>
+            <li class="catalog-menu">
+              <a class="navigation-link icon catalog-navigation-open" href="#">Каталог товаров</a>
               <ul class="submenu list">
                 <li class="submenu-group group-1">
-                  <a href="#">Виртуальная реальность</a>
-                  <a href="catalog.html">Моноподы для селфи</a>
-                  <a href="#">Экшн-камеры</a>
+                  <a class="submenu-link" href="#">Виртуальная реальность</a>
+                  <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
+                  <a class="submenu-link" href="#">Экшн-камеры</a>
                 </li>
                 <li class="submenu-group group-2">
-                  <a href="#">Фитнес-браслеты</a>
-                  <a href="#">Умные часы</a>
+                  <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                  <a class="submenu-link" href="#">Умные часы</a>
                 </li>
                 <li class="submenu-group group-3">
-                  <a href="#">Квадрокоптеры</a>
+                  <a class="submenu-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </li>
@@ -76,14 +85,14 @@
         <section class="page-header">
           <h1 class="title">Моноподы для селфи</h1>
           <ul class="breadcrumbs list">
-            <li>
-              <a href="index.html">Главная</a>
+            <li class="icon icon-arrow">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
-            <li>
-              <a href="#">Каталог товаров</a>
+            <li class="icon icon-arrow">
+              <a class="breadcrumbs-link" href="#">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-current">
-              <a>Моноподы для селфи</a>
+              <a class="breadcrumbs-link">Моноподы для селфи</a>
             </li>
           </ul>
         </section>
@@ -91,9 +100,9 @@
       <section class="catalog">
         <div class="catalog-container">
           <div class="filters"> 
-            <h2 class="filters-title">Фильтр:</h2>
+            <h2 class="filters-title"><span class="filters-title-text">Фильтр:</span></h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset class="price-filter">
+              <fieldset class="filter-item price-filter">
                 <legend class="price-filter-title filter-title">Стоимость</legend>
                 <div class="range-filter">
                   <div class="range-controls">
@@ -107,9 +116,9 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="color-filter">
+              <fieldset class="filter-item color-filter">
                 <legend class="filter-title">Цвет</legend>
-                <ul class="list">
+                <ul class="filter-options list">
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
                     <label for="filter-black">Черный</label>
@@ -132,7 +141,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-item bluetooth-filter">
                 <legend class="filter-title">Bluetooth</legend>
                 <ul class="list">
                   <li class="filter-option">
@@ -161,11 +170,11 @@
                 <li class="sort-option">
                   <a class="sort" href="#">По популярности</a>
                 </li>
-                <li class="sort-option sort-direction sort-direction-up">
-                  <a class="sort sort-up" href="#">Вверх</a>
+                <li class="sort-option sort-direction-up">
+                  <a class="sort-direction sort-up" href="#">Вверх</a>
                 </li>
-                <li class="sort-option sort-direction sort-direction-down">
-                  <a class="sort sort-down sort-active" href="#">Вниз</a>
+                <li class="sort-option sort-direction-down">
+                  <a class="sort-direction sort-down sort-active" href="#">Вниз</a>
                 </li>
               </ul>
             </div> 
@@ -222,8 +231,8 @@
                   <button class="user-button to-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
-              <li class="catalog-item">
-                <div class="catalog-item-image catalog-item-new">
+              <li class="catalog-item catalog-item-new">
+                <div class="catalog-item-image">
                   <a href="#">
                     <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   </a>
@@ -241,11 +250,11 @@
               </li>
             </ul>
             <ul class="pagination-list list">
-              <li class="pagination-item pagination-item-prev"><a>Назад</a></li>
-              <li class="pagination-item pagination-item-current"><a>1</a></li>
-              <li class="pagination-item"><a href="#">2</a></li>
-              <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item pagination-item-next"><a href="#">Вперед</a></li>
+              <li class="pagination-item pagination-item-prev"><a class="pagination-link">Назад</a></li>
+              <li class="pagination-item pagination-item-number pagination-item-current"><a class="pagination-link">1</a></li>
+              <li class="pagination-item pagination-item-number"><a class="pagination-link" href="#">2</a></li>
+              <li class="pagination-item pagination-item-number"><a class="pagination-link" href="#">3</a></li>
+              <li class="pagination-item pagination-item-next"><a class="pagination-link" href="#">Вперед</a></li>
             </ul>
           </div>
         </div>
@@ -253,7 +262,7 @@
     </main>
     <footer class="main-footer">
       <div class="container footer-container">
-        <div class="footer-column footer-left">
+        <div class="footer-column footer-left start-line">
           <a class="logo logo-footer" href="index.html">
             <img src="img/logo-footer.png" alt="DEVICE" width="164" height="36">
           </a>
@@ -286,13 +295,22 @@
         <div class="footer-column footer-right">
           <ul class="user-links user-links-footer list">
             <li class="menu-entrance">
-                <a class="menu-icon f-entrance-icon" href="login.html">Войти</a>
+                <a class="user-link" href="login.html">
+                  <svg class="menu-icon footer-icon" width="13" height="12"><use xlink:href='#user' /></svg>
+                  Войти
+                </a>
             </li>
             <li class="menu-compare">
-              <a class="menu-icon f-compare-icon" href="compare.html">Сравнить</a>
+              <a class="user-link" href="compare.html">
+                <svg class="menu-icon footer-icon" width="10" height="10"><use xlink:href='#compare' /></svg>
+                Сравнить
+              </a>
             </li>
             <li class="menu-cart">
-              <a class="menu-icon f-cart-icon" href="cart.html">Корзина</a>
+              <a class="user-link" href="cart.html">
+                <svg class="menu-icon footer-icon" width="12" height="12"><use xlink:href="#cart" /></svg>
+                Корзина
+              </a>
             </li>
           </ul>
           <p class="phone">Тел.: +7 (495) 495-95-95</p>
@@ -300,5 +318,16 @@
         </div>
       </div>
     </footer>
+    <svg style="display:none">
+      <symbol id="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12">
+        <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+      </symbol>
+      <symbol id="compare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+        <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+      </symbol>
+      <symbol id="cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+        <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+      </symbol>
+    </svg>
   </body>
 </html>
