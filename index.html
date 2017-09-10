@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-style.css">
   </head>
   <body>
     <div class="container">  
@@ -303,11 +303,11 @@
               <p>
                 Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
               </p>
-              <a class="map" href="#">
+              <a class="map-link" href="https://yandex.ru/maps/-/CBUjyZTgwB">
                 <img class="map-img" src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15">
               </a>
             </div>
-            <a class="button info-btn" href="#">Напишите нам</a>
+            <a class="button info-btn contacts-link" href="#">Напишите нам</a>
           </div>
         </section>
       </div>
@@ -389,12 +389,13 @@
           <textarea name="mail-content" id="mail-content" rows="5" placeholder="В свободной форме"></textarea>
         </div>
         <button class="modal-button button" type="submit">Отправить</button>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close contacts-modal-close" type="button">Закрыть</button>
       </form>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close map-modal-close" type="button">Закрыть</button>
+      <div class="map" id="map"></div>
     </section>
     <svg style="display:none">
       <symbol id="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12">
@@ -407,6 +408,7 @@
         <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
       </symbol>
     </svg>
-    
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/min-script.js"></script>
   </body>                      
 </html>
