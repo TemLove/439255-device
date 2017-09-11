@@ -71,7 +71,7 @@ function init () {
   }),
   myMap.geoObjects
     .add(new ymaps.Placemark([55.686980, 37.529654], {
-      balloonContent: 'цвет <strong>носика Гены</strong>',
+      balloonContent: 'улица Строителей, 15',
       iconCaption: 'улица Строителей, 15'
     }, {
     preset: 'islands#redDotIconWithCaption'
