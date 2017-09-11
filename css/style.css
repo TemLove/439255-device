@@ -814,14 +814,14 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
 }
 
-.partner a {
+.partner-link {
   opacity: 0.2;
   -webkit-filter: grayscale(1);
           filter: grayscale(1); 
 }
 
-.partner a:hover,
-.partner a:focus {
+.partner-link:hover,
+.partner-link:focus {
   opacity: 1;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
@@ -829,35 +829,35 @@ input[type="radio"].visually-hidden {
 
 /*for IE*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .partner img {
+  .partner-logo {
     opacity: 0;
   }
 
-  .partner a {
+  .partner-link {
     display: block;
     width: 260px;
     height: 100px;
     background-repeat: no-repeat;
   }
 
-  .partner-dji a {
+  .partner-dji .partner-link {
     background-image: url(../img/logo-1a.png);
   }
 
-  .partner-sp-gadgets a {
+  .partner-sp-gadgets .partner-link {
     background-image: url(../img/logo-2a.png);
   }
 
-  .partner-gopro a {
+  .partner-gopro .partner-link {
     background-image: url(../img/logo-3a.png);
   }
 
-  .partner-vive a {
+  .partner-vive .partner-link {
     background-image: url(../img/logo-4a.png);
   }
 
-  .partner a:hover img,
-  .partner a:focus img {
+  .partner-link:hover .partner-logo,
+  .partner-link:focus .partner-logo {
     opacity: 1;
   }
 }
@@ -1354,6 +1354,8 @@ modal-contacts-button {
 .map {
   width: 960px;
   height: 560px;
+  background-image: url(../img/map2.jpg);
+  background-repeat: no-repeat;
 }
 
 /**/
